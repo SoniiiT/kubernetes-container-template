@@ -1,0 +1,32 @@
+apiVersion: traefik.io/v1alpha1
+kind: IngressRoute
+metadata:
+  name: rook-ceph-mgr-dashboard
+  namespace: rook-ceph
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - match: Host(`ceph.example.net`)
+      kind: Rule
+      services:
+        - name: rook-ceph-mgr-dashboard
+          port: 8443
+  tls:
+    secretName: example-production-tls
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: example-production
+  namespace: rook-ceph
+spec:
+  secretName: example-production-tls
+  issuerRef:
+    name: example-production-issuer
+    kind: ClusterIssuer
+  commonName: "ceph.example.net"
+  dnsNames:
+    - "ceph.example.net"

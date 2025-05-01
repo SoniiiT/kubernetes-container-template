@@ -1,0 +1,120 @@
+# Copyright Broadcom, Inc. All Rights Reserved.
+# SPDX-License-Identifier: APACHE-2.0
+
+image:
+  registry: docker.io
+  repository: bitnami/moodle
+  tag: 4.5.0
+  pullPolicy: IfNotPresent
+replicaCount: 1
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 10
+  targetCPU: 80
+  targetMemory: 80
+
+# Moodle Settings
+moodleSiteName: "moodle.home.soniiit.net"
+moodleLang: "de"
+moodleSkipInstall: false
+moodleUsername: admin
+moodlePassword: "adminpassword"
+moodleEmail: user@example.com
+allowEmptyPassword: false
+
+externalDatabase:
+  # type: ""
+  # host: ""
+  port: 3306
+  user: "bn_moodle"
+  password: "password2024"
+  database: bitnami_moodle
+
+persistence:
+  enabled: true
+  accessModes:
+    - ReadWriteOnce
+  size: 8Gi
+  annotations: {}
+
+resourcesPreset: "micro"
+## resources:
+##   requests:
+##     cpu: 2
+##     memory: 512Mi
+##   limits:
+##     cpu: 3
+##     memory: 1024Mi
+resources: {}
+
+startupProbe:
+  enabled: false
+  path: /login/index.php
+  initialDelaySeconds: 30
+  periodSeconds: 10
+  timeoutSeconds: 5
+  failureThreshold: 60
+  successThreshold: 1
+
+livenessProbe:
+  enabled: false
+  initialDelaySeconds: 600
+  periodSeconds: 10
+  timeoutSeconds: 5
+  failureThreshold: 6
+  successThreshold: 1
+
+readinessProbe:
+  enabled: false
+  path: /login/index.php
+  initialDelaySeconds: 30
+  periodSeconds: 5
+  timeoutSeconds: 3
+  failureThreshold: 6
+  successThreshold: 1
+
+## Kubernetes configuration
+## For minikube, set this to NodePort, for ingress ClusterIP, elsewhere use LoadBalancer
+##
+service:
+  type: ClusterIP
+  httpPort: 6060
+  httpNodePort:
+  edgePort: 7070
+
+
+## MariaDB chart configuration
+## https://github.com/bitnami/charts/blob/main/bitnami/mariadb/values.yaml
+##
+mariadb:
+  enabled: true
+  architecture: standalone
+  auth:
+    rootPassword: "password2024"
+    database: bitnami_moodle
+    username: bn_moodle
+    password: "password2024"
+  primary:
+    persistence:
+      enabled: true
+      accessModes:
+        - ReadWriteOnce
+      size: 8Gi
+    resourcesPreset: "micro"
+    ## resources:
+    ##   requests:
+    ##     cpu: 2
+    ##     memory: 512Mi
+    ##   limits:
+    ##     cpu: 3
+    ##     memory: 1024Mi
+    resources: {}
+
+networkPolicy:
+  enabled: true
+  allowExternal: true
+  allowExternalEgress: true
+
+  ingressNSMatchLabels: {}
+  ingressNSPodMatchLabels: {}

@@ -1,0 +1,4 @@
+# ConfigMap: argocd-rbac-cm
+# Name: policy.csv
+g, Admins, role:admin
+g, Users, role:readonly
