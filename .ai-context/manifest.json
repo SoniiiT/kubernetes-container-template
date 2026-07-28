@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "project_root": ".",
+  "analysis_mode": "initialized",
+  "analyzed_at": "2026-07-28T11:52:22+02:00",
+  "project_type": "Kubernetes configuration and Helm-values template repository",
+  "analyzed_areas": [
+    "kubernetes-manifests",
+    "helm-values",
+    "ingress-and-tls",
+    "storage",
+    "access-control",
+    "generated-artifacts",
+    "dependency-management",
+    "security"
+  ],
+  "source_fingerprints": {
+    "algorithm": "SHA-256",
+    "scope": "67 tracked files excluding seven credential/key payload paths",
+    "aggregate": "5a2a54a8353edd51eb1ca9d32647bcc0c77563edae2f11edcd26e3b46dc97b47"
+  },
+  "refresh_status": {
+    "status": "current",
+    "last_refresh_reason": "Initial project analysis",
+    "next_refresh_trigger": "After adding or substantially changing a service template, ingress/TLS wiring, storage topology, or generated upstream manifest"
+  },
+  "sensitive_paths_excluded_from_fingerprint": [
+    "Argo-CD/authentik/oidc.authentik.clientSecret",
+    "Argo-CD/authentik/oidc.config",
+    "Cert-Manager/issuer/selfsigned/ca.key",
+    "Cert-Manager/issuer/selfsigned/ca.crt",
+    "Cert-Manager/issuer/cloudflare+letsencrypt/cloudflare-credentials.yaml",
+    "Kestra/secrets/ssh-key.yaml",
+    "Traefik/dashboard-credentials.yaml"
+  ],
+  "provider_adapters": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    ".github/copilot-instructions.md"
+  ]
+}
