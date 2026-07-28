@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "symbols": [
+    {"name": "traefik", "kind": "HelmValues", "source": "Traefik/traefik-values.yaml", "area": "ingress", "notes": "Three replicas, LoadBalancer service, web to websecure redirect, CRD provider"},
+    {"name": "traefik-dashboard", "kind": "IngressRoute", "source": "Traefik/ingress.yaml", "area": "ingress", "notes": "Dashboard route protected by basic auth"},
+    {"name": "default-headers", "kind": "Middleware", "source": "Traefik/middleware/default-headers.yaml", "area": "ingress-security", "notes": "HSTS, CSP, frame and content-type protections"},
+    {"name": "traefik-dashboard-basicauth", "kind": "Middleware", "source": "Traefik/middleware/middleware.yaml", "area": "ingress-security", "notes": "References dashboard credentials Secret"},
+    {"name": "bouncer", "kind": "Middleware", "source": "Traefik/middleware/bouncer-middleware.yaml", "area": "ingress-security", "notes": "CrowdSec stream mode"},
+    {"name": "letsencrypt-production", "kind": "ClusterIssuer", "source": "Cert-Manager/issuer/cloudflare+letsencrypt/letsencrypt-production.yaml", "area": "certificates", "notes": "Let's Encrypt production via Cloudflare DNS-01"},
+    {"name": "letsencrypt-staging", "kind": "ClusterIssuer", "source": "Cert-Manager/issuer/cloudflare+letsencrypt/letsencrypt-staging.yaml", "area": "certificates", "notes": "Let's Encrypt staging via Cloudflare DNS-01"},
+    {"name": "selfsigned-issuer", "kind": "ClusterIssuer", "source": "Cert-Manager/issuer/selfsigned/clusterissuer-selfsigned.yml", "area": "certificates", "notes": "Uses selfsigned-ca Secret"},
+    {"name": "example-production", "kind": "Certificate", "source": "Cert-Manager/certificates/cloudflare+letsencrypt/certificates-production.yaml", "area": "certificates", "notes": "Wildcard production certificate example"},
+    {"name": "rook-ceph", "kind": "Namespace", "source": "Ceph-Rook/common.yaml", "area": "storage", "notes": "Operator and cluster namespace"},
+    {"name": "rook-ceph-operator", "kind": "Deployment", "source": "Ceph-Rook/operator.yaml", "area": "storage", "notes": "Rook operator deployment"},
+    {"name": "rook-ceph", "kind": "CephCluster", "source": "Ceph-Rook/cluster.yaml", "area": "storage", "notes": "Ceph Reef cluster with three monitors and two managers"},
+    {"name": "myfs", "kind": "CephFilesystem", "source": "Ceph-Rook/storageclass-shared-file-storage.yaml", "area": "storage", "notes": "CephFS filesystem with replicated pools"},
+    {"name": "replicapool", "kind": "CephBlockPool", "source": "Ceph-Rook/storageclass-block-storage.yaml", "area": "storage", "notes": "Replicated RBD pool"},
+    {"name": "rook-ceph-block", "kind": "StorageClass", "source": "Ceph-Rook/storageclass-block-storage.yaml", "area": "storage", "notes": "Default RBD class with expansion"},
+    {"name": "rook-cephfs", "kind": "StorageClass", "source": "Ceph-Rook/storageclass-shared-file-storage.yaml", "area": "storage", "notes": "CephFS dynamic provisioning class"},
+    {"name": "argocd-server", "kind": "IngressRoute", "source": "Argo-CD/ingress.yaml", "area": "gitops-ingress", "notes": "HTTP and gRPC route rules"},
+    {"name": "authentik", "kind": "HelmValues", "source": "Authentik/authentik-values.yaml", "area": "identity", "notes": "Embedded PostgreSQL and Redis enabled"},
+    {"name": "homepage", "kind": "HelmValues", "source": "Homepage/homepage-values.yaml", "area": "service-template", "notes": "Cluster discovery mode with RBAC"},
+    {"name": "kasmApp", "kind": "HelmValues", "source": "Kasm/kasm-values.yaml", "area": "service-template", "notes": "Proxy, database, API, manager, Guac, gateway, share, and Redis services"},
+    {"name": "deployments", "kind": "HelmValues", "source": "Kestra/kestra-values.yaml", "area": "service-template", "notes": "Webserver, executor, indexer, scheduler, worker, and optional standalone"},
+    {"name": "graylog", "kind": "HelmValues", "source": "GrayLog/graylog-values.yaml", "area": "service-template", "notes": "Graylog with OpenSearch and MongoDB dependencies"},
+    {"name": "mariadb", "kind": "HelmValues", "source": "Moodle/moodle-values.yaml", "area": "service-template", "notes": "Standalone MariaDB dependency enabled"},
+    {"name": "portainer", "kind": "HelmValues", "source": "Portainer/portainer-values.yaml", "area": "service-template", "notes": "Traefik ingress enabled"},
+    {"name": "clusterName", "kind": "HelmValue", "source": "Teleport/Teleport-Cluster/teleport-cluster-values.yaml", "area": "access-control", "notes": "Public Teleport cluster identity; source comments state it cannot change in-place"},
+    {"name": "teleport-cluster-websecure", "kind": "IngressRoute", "source": "Teleport/Teleport-Cluster/ingress.yaml", "area": "access-control-ingress", "notes": "TLS route with ServersTransport and security Middleware"},
+    {"name": "nginx", "kind": "Deployment", "source": "NGINX-Web/deployment.yaml", "area": "service-template", "notes": "Small raw NGINX workload with Service and route"},
+    {"name": "applications.argoproj.io", "kind": "CustomResourceDefinition", "source": "Argo-CD/deployment.yaml", "area": "gitops", "notes": "Generated Argo CD CRD content"}
+  ]
+}
