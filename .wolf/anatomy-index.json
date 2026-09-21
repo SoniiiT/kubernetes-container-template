@@ -1,0 +1,829 @@
+{
+  "version": 1,
+  "meta": {
+    "lastScanned": "2026-09-21T16:32:36.039Z",
+    "fileCount": 90,
+    "hits": 0,
+    "misses": 0,
+    "renderedHash": "09892ce4de0b1251dbe99bd6ad366a97b3c7e41123a351d58bf2c4cb4c7fe481",
+    "storeUpdatedAt": "2026-09-21T16:32:36.039Z",
+    "rootHash": "1a1d64af43e22d26"
+  },
+  "files": {
+    ".ai-context/architecture.md": {
+      "description": "Architecture",
+      "tokens": 810,
+      "hash": "38c73cad4a363b7f",
+      "size": 3238,
+      "mtimeMs": 1787554056503.986,
+      "updatedAt": "2026-09-21T16:32:36.014Z",
+      "source": "scan"
+    },
+    ".ai-context/conventions.md": {
+      "description": "Conventions",
+      "tokens": 588,
+      "hash": "bb5c8d193f823fc7",
+      "size": 2351,
+      "mtimeMs": 1787554056504.0886,
+      "updatedAt": "2026-09-21T16:32:36.014Z",
+      "source": "scan"
+    },
+    ".ai-context/dependencies.md": {
+      "description": "Dependencies",
+      "tokens": 680,
+      "hash": "20c989640636ced6",
+      "size": 2717,
+      "mtimeMs": 1787554056504.1746,
+      "updatedAt": "2026-09-21T16:32:36.014Z",
+      "source": "scan"
+    },
+    ".ai-context/indexes/files.json": {
+      "description": "",
+      "tokens": 3204,
+      "hash": "d64194c9e6065e00",
+      "size": 11212,
+      "mtimeMs": 1787554056504.3535,
+      "updatedAt": "2026-09-21T16:32:36.015Z",
+      "source": "scan"
+    },
+    ".ai-context/indexes/symbols.json": {
+      "description": "Declares protections",
+      "tokens": 1482,
+      "hash": "7ccc3ec5ea4dd63a",
+      "size": 5186,
+      "mtimeMs": 1787554056504.4636,
+      "updatedAt": "2026-09-21T16:32:36.015Z",
+      "source": "scan"
+    },
+    ".ai-context/knowledge/business-rules/invariants.md": {
+      "description": "Observed invariants",
+      "tokens": 357,
+      "hash": "77a6ddc65031026a",
+      "size": 1426,
+      "mtimeMs": 1787554056504.7322,
+      "updatedAt": "2026-09-21T16:32:36.015Z",
+      "source": "scan"
+    },
+    ".ai-context/knowledge/decisions/index.md": {
+      "description": "Decisions",
+      "tokens": 49,
+      "hash": "077ab27672db09d7",
+      "size": 195,
+      "mtimeMs": 1787554056504.979,
+      "updatedAt": "2026-09-21T16:32:36.015Z",
+      "source": "scan"
+    },
+    ".ai-context/knowledge/decisions/README.md": {
+      "description": "Project documentation",
+      "tokens": 57,
+      "hash": "289c4e5c8e097713",
+      "size": 227,
+      "mtimeMs": 1787554056504.8777,
+      "updatedAt": "2026-09-21T16:32:36.016Z",
+      "source": "scan"
+    },
+    ".ai-context/knowledge/feature-guides/ceph-storage.md": {
+      "description": "Rook-Ceph storage feature guide",
+      "tokens": 308,
+      "hash": "db691b0f57a6a3d1",
+      "size": 1231,
+      "mtimeMs": 1787554056505.1177,
+      "updatedAt": "2026-09-21T16:32:36.016Z",
+      "source": "scan"
+    },
+    ".ai-context/knowledge/feature-guides/gitops-identity.md": {
+      "description": "Argo CD and identity guide",
+      "tokens": 206,
+      "hash": "7c133e49c7b481c6",
+      "size": 822,
+      "mtimeMs": 1787554056505.225,
+      "updatedAt": "2026-09-21T16:32:36.016Z",
+      "source": "scan"
+    },
+    ".ai-context/knowledge/feature-guides/ingress-and-tls.md": {
+      "description": "Ingress and TLS feature guide",
+      "tokens": 301,
+      "hash": "0bf697aa444cee04",
+      "size": 1204,
+      "mtimeMs": 1787554056505.3284,
+      "updatedAt": "2026-09-21T16:32:36.016Z",
+      "source": "scan"
+    },
+    ".ai-context/knowledge/feature-guides/service-templates.md": {
+      "description": "Service template guide",
+      "tokens": 272,
+      "hash": "4c967e26658ceb68",
+      "size": 1085,
+      "mtimeMs": 1787554056505.4219,
+      "updatedAt": "2026-09-21T16:32:36.016Z",
+      "source": "scan"
+    },
+    ".ai-context/knowledge/README.md": {
+      "description": "Project documentation",
+      "tokens": 154,
+      "hash": "7b75974329c5f514",
+      "size": 616,
+      "mtimeMs": 1787554056504.598,
+      "updatedAt": "2026-09-21T16:32:36.016Z",
+      "source": "scan"
+    },
+    ".ai-context/knowledge/removal-guides/README.md": {
+      "description": "Project documentation",
+      "tokens": 202,
+      "hash": "c89ec071989fdee3",
+      "size": 805,
+      "mtimeMs": 1787554056505.5903,
+      "updatedAt": "2026-09-21T16:32:36.016Z",
+      "source": "scan"
+    },
+    ".ai-context/knowledge/risks/README.md": {
+      "description": "Project documentation",
+      "tokens": 311,
+      "hash": "8f733062d4826640",
+      "size": 1243,
+      "mtimeMs": 1787554056505.7122,
+      "updatedAt": "2026-09-21T16:32:36.017Z",
+      "source": "scan"
+    },
+    ".ai-context/manifest.json": {
+      "description": "",
+      "tokens": 400,
+      "hash": "20431ab96b411dfc",
+      "size": 1397,
+      "mtimeMs": 1787554056505.7876,
+      "updatedAt": "2026-09-21T16:32:36.017Z",
+      "source": "scan"
+    },
+    ".ai-context/project-map.md": {
+      "description": "Project map",
+      "tokens": 584,
+      "hash": "ef25bbea3475ed5b",
+      "size": 2335,
+      "mtimeMs": 1787554056505.871,
+      "updatedAt": "2026-09-21T16:32:36.017Z",
+      "source": "scan"
+    },
+    ".github/copilot-instructions.md": {
+      "description": "Copilot project context",
+      "tokens": 117,
+      "hash": "87243a1336e0fc5f",
+      "size": 465,
+      "mtimeMs": 1787554056506.018,
+      "updatedAt": "2026-09-21T16:32:36.017Z",
+      "source": "scan"
+    },
+    "AGENTS.md": {
+      "description": "Agent context",
+      "tokens": 186,
+      "hash": "2fc1ab1687cb7175",
+      "size": 742,
+      "mtimeMs": 1790008355999.365,
+      "updatedAt": "2026-09-21T16:32:36.017Z",
+      "source": "scan"
+    },
+    "Argo-CD/authentik/oidc.authentik.clientSecret": {
+      "description": "Secret: argocd-secret",
+      "tokens": 26,
+      "hash": "e061fedf7addf2e4",
+      "size": 95,
+      "mtimeMs": 1787554056506.2617,
+      "updatedAt": "2026-09-21T16:32:36.017Z",
+      "source": "scan"
+    },
+    "Argo-CD/authentik/oidc.config": {
+      "description": "ConfigMap: argocd-cm",
+      "tokens": 86,
+      "hash": "4d8a5f90a1d1c814",
+      "size": 319,
+      "mtimeMs": 1787554056506.3323,
+      "updatedAt": "2026-09-21T16:32:36.017Z",
+      "source": "scan"
+    },
+    "Argo-CD/authentik/policy.csv": {
+      "description": "ConfigMap: argocd-rbac-cm",
+      "tokens": 25,
+      "hash": "e5f1c05942477961",
+      "size": 92,
+      "mtimeMs": 1787554056506.4023,
+      "updatedAt": "2026-09-21T16:32:36.018Z",
+      "source": "scan"
+    },
+    "Argo-CD/ingress.yaml": {
+      "description": "K8s IngressRoute: argocd-server",
+      "tokens": 252,
+      "hash": "6ef2c393873f0e1b",
+      "size": 879,
+      "mtimeMs": 1787554056507.7766,
+      "updatedAt": "2026-09-21T16:32:36.018Z",
+      "source": "scan"
+    },
+    "Authentik/authentik-values.yaml": {
+      "description": "Declares name",
+      "tokens": 169,
+      "hash": "071091e186409210",
+      "size": 591,
+      "mtimeMs": 1787554056507.8918,
+      "updatedAt": "2026-09-21T16:32:36.018Z",
+      "source": "scan"
+    },
+    "Authentik/ingress.yaml": {
+      "description": "K8s IngressRoute: authentik",
+      "tokens": 188,
+      "hash": "143341c08e015950",
+      "size": 656,
+      "mtimeMs": 1787554056507.9614,
+      "updatedAt": "2026-09-21T16:32:36.018Z",
+      "source": "scan"
+    },
+    "Bind9/empty.md": {
+      "description": "",
+      "tokens": 1,
+      "hash": "688787d8ff144c50",
+      "size": 3,
+      "mtimeMs": 1787554056508.0635,
+      "updatedAt": "2026-09-21T16:32:36.018Z",
+      "source": "scan"
+    },
+    "Bitwarden/empty.md": {
+      "description": "",
+      "tokens": 1,
+      "hash": "688787d8ff144c50",
+      "size": 3,
+      "mtimeMs": 1787554056508.175,
+      "updatedAt": "2026-09-21T16:32:36.018Z",
+      "source": "scan"
+    },
+    "Ceph-Rook/cluster.yaml": {
+      "description": "################################################################################################################",
+      "tokens": 5407,
+      "hash": "cf6ead71f843933f",
+      "size": 18923,
+      "mtimeMs": 1787554056508.4219,
+      "updatedAt": "2026-09-21T16:32:36.019Z",
+      "source": "scan"
+    },
+    "Ceph-Rook/common.yaml": {
+      "description": "###################################################################################################",
+      "tokens": 10055,
+      "hash": "1f31ca6a37075c64",
+      "size": 35190,
+      "mtimeMs": 1787554056508.8804,
+      "updatedAt": "2026-09-21T16:32:36.019Z",
+      "source": "scan"
+    },
+    "Ceph-Rook/crds.yaml": {
+      "description": "#############################################################################",
+      "tokens": 224999,
+      "hash": "7771bdccb019420d",
+      "size": 787497,
+      "mtimeMs": 1787554056509.782,
+      "updatedAt": "2026-09-21T16:32:36.021Z",
+      "source": "scan"
+    },
+    "Ceph-Rook/dashboard-external-ingress.yaml": {
+      "description": "K8s IngressRoute: rook-ceph-mgr-dashboard",
+      "tokens": 199,
+      "hash": "6935da411207a29c",
+      "size": 695,
+      "mtimeMs": 1787554056509.916,
+      "updatedAt": "2026-09-21T16:32:36.021Z",
+      "source": "scan"
+    },
+    "Ceph-Rook/operator.yaml": {
+      "description": "################################################################################################################",
+      "tokens": 8225,
+      "hash": "d2ff67f7987aa8f8",
+      "size": 28786,
+      "mtimeMs": 1787554056510.0513,
+      "updatedAt": "2026-09-21T16:32:36.022Z",
+      "source": "scan"
+    },
+    "Ceph-Rook/storageclass-block-storage.yaml": {
+      "description": "K8s CephBlockPool: replicapool",
+      "tokens": 844,
+      "hash": "0605653e0b6cd66f",
+      "size": 2953,
+      "mtimeMs": 1787554056510.185,
+      "updatedAt": "2026-09-21T16:32:36.022Z",
+      "source": "scan"
+    },
+    "Ceph-Rook/storageclass-shared-file-storage.yaml": {
+      "description": "K8s CephFilesystem: myfs",
+      "tokens": 429,
+      "hash": "334b9f82dc8bb64d",
+      "size": 1499,
+      "mtimeMs": 1787554056510.2622,
+      "updatedAt": "2026-09-21T16:32:36.022Z",
+      "source": "scan"
+    },
+    "Cert-Manager/cert-manager-values.yaml": {
+      "description": "",
+      "tokens": 62,
+      "hash": "ceccc22a24230713",
+      "size": 215,
+      "mtimeMs": 1787554056510.4336,
+      "updatedAt": "2026-09-21T16:32:36.022Z",
+      "source": "scan"
+    },
+    "Cert-Manager/certificates/cloudflare+letsencrypt/certificates-production.yaml": {
+      "description": "K8s Certificate: example-production",
+      "tokens": 86,
+      "hash": "a110a80494e340d3",
+      "size": 299,
+      "mtimeMs": 1787554056510.5981,
+      "updatedAt": "2026-09-21T16:32:36.022Z",
+      "source": "scan"
+    },
+    "Cert-Manager/certificates/cloudflare+letsencrypt/certificates-staging.yaml": {
+      "description": "K8s Certificate: example-staging",
+      "tokens": 83,
+      "hash": "2e60be14f07c6d3f",
+      "size": 290,
+      "mtimeMs": 1787554056510.6694,
+      "updatedAt": "2026-09-21T16:32:36.022Z",
+      "source": "scan"
+    },
+    "Cert-Manager/certificates/selfsigned/certificates-selfsigned.yaml": {
+      "description": "K8s Certificate: example-selfsigned",
+      "tokens": 80,
+      "hash": "abd05b681d99cb01",
+      "size": 278,
+      "mtimeMs": 1787554056510.7717,
+      "updatedAt": "2026-09-21T16:32:36.022Z",
+      "source": "scan"
+    },
+    "Cert-Manager/issuer/cloudflare+letsencrypt/letsencrypt-production.yaml": {
+      "description": "K8s ClusterIssuer: letsencrypt-production",
+      "tokens": 144,
+      "hash": "98b71e72f9fe6107",
+      "size": 503,
+      "mtimeMs": 1787554056511.0063,
+      "updatedAt": "2026-09-21T16:32:36.023Z",
+      "source": "scan"
+    },
+    "Cert-Manager/issuer/cloudflare+letsencrypt/letsencrypt-staging.yaml": {
+      "description": "K8s ClusterIssuer: letsencrypt-staging",
+      "tokens": 145,
+      "hash": "e2959077c55143d6",
+      "size": 505,
+      "mtimeMs": 1787554056511.0876,
+      "updatedAt": "2026-09-21T16:32:36.023Z",
+      "source": "scan"
+    },
+    "Cert-Manager/issuer/selfsigned/ca.crt": {
+      "description": "",
+      "tokens": 18,
+      "hash": "1c61d8ba4458b4f4",
+      "size": 66,
+      "mtimeMs": 1787554056511.1926,
+      "updatedAt": "2026-09-21T16:32:36.023Z",
+      "source": "scan"
+    },
+    "Cert-Manager/issuer/selfsigned/clusterissuer-selfsigned.yml": {
+      "description": "K8s ClusterIssuer: selfsigned-issuer",
+      "tokens": 37,
+      "hash": "21cc1cb50cd369a4",
+      "size": 128,
+      "mtimeMs": 1787554056511.3198,
+      "updatedAt": "2026-09-21T16:32:36.023Z",
+      "source": "scan"
+    },
+    "Cert-Manager/issuer/selfsigned/selfsigned-ca.yaml": {
+      "description": "K8s Secret: selfsigned-ca",
+      "tokens": 56,
+      "hash": "804fb1542f51088a",
+      "size": 194,
+      "mtimeMs": 1787554056511.3865,
+      "updatedAt": "2026-09-21T16:32:36.023Z",
+      "source": "scan"
+    },
+    "CLAUDE.md": {
+      "description": "OpenWolf",
+      "tokens": 198,
+      "hash": "bebfebeb9101159e",
+      "size": 790,
+      "mtimeMs": 1790008355993.5085,
+      "updatedAt": "2026-09-21T16:32:36.023Z",
+      "source": "scan"
+    },
+    "Cloudflare-DDNS/empty.md": {
+      "description": "",
+      "tokens": 1,
+      "hash": "688787d8ff144c50",
+      "size": 3,
+      "mtimeMs": 1787554056511.5166,
+      "updatedAt": "2026-09-21T16:32:36.023Z",
+      "source": "scan"
+    },
+    "Cloudflare-Tunnel/empty.md": {
+      "description": "",
+      "tokens": 1,
+      "hash": "688787d8ff144c50",
+      "size": 3,
+      "mtimeMs": 1787554056511.6199,
+      "updatedAt": "2026-09-21T16:32:36.023Z",
+      "source": "scan"
+    },
+    "CodeX-Docs/empty.md": {
+      "description": "",
+      "tokens": 1,
+      "hash": "688787d8ff144c50",
+      "size": 3,
+      "mtimeMs": 1787554056511.7234,
+      "updatedAt": "2026-09-21T16:32:36.024Z",
+      "source": "scan"
+    },
+    "Crowdsec/empty.md": {
+      "description": "",
+      "tokens": 1,
+      "hash": "688787d8ff144c50",
+      "size": 3,
+      "mtimeMs": 1787554056511.837,
+      "updatedAt": "2026-09-21T16:32:36.024Z",
+      "source": "scan"
+    },
+    "FastAPI/empty.md": {
+      "description": "",
+      "tokens": 0,
+      "hash": "e3b0c44298fc1c14",
+      "size": 0,
+      "mtimeMs": 1787554056511.91,
+      "updatedAt": "2026-09-21T16:32:36.024Z",
+      "source": "scan"
+    },
+    "GitLab/empty.md": {
+      "description": "",
+      "tokens": 0,
+      "hash": "e3b0c44298fc1c14",
+      "size": 0,
+      "mtimeMs": 1787554056511.984,
+      "updatedAt": "2026-09-21T16:32:36.024Z",
+      "source": "scan"
+    },
+    "GrayLog/graylog-values.yaml": {
+      "description": "Default values for Graylog.",
+      "tokens": 5521,
+      "hash": "2b2db48e4c7e6c9a",
+      "size": 19323,
+      "mtimeMs": 1787554056512.1458,
+      "updatedAt": "2026-09-21T16:32:36.024Z",
+      "source": "scan"
+    },
+    "GrayLog/ingress.yaml": {
+      "description": "K8s IngressRoute: graylog",
+      "tokens": 182,
+      "hash": "1d650417e108f68e",
+      "size": 637,
+      "mtimeMs": 1787554056512.2412,
+      "updatedAt": "2026-09-21T16:32:36.024Z",
+      "source": "scan"
+    },
+    "Hashicorp-Vault-Operator/empty.md": {
+      "description": "",
+      "tokens": 1,
+      "hash": "688787d8ff144c50",
+      "size": 3,
+      "mtimeMs": 1787554056512.349,
+      "updatedAt": "2026-09-21T16:32:36.024Z",
+      "source": "scan"
+    },
+    "HomeAssistant/empty.md": {
+      "description": "",
+      "tokens": 1,
+      "hash": "688787d8ff144c50",
+      "size": 3,
+      "mtimeMs": 1787554056512.443,
+      "updatedAt": "2026-09-21T16:32:36.025Z",
+      "source": "scan"
+    },
+    "Homepage/homepage-values.yaml": {
+      "description": "",
+      "tokens": 339,
+      "hash": "f714d6ed25969432",
+      "size": 1187,
+      "mtimeMs": 1787554056512.561,
+      "updatedAt": "2026-09-21T16:32:36.025Z",
+      "source": "scan"
+    },
+    "Homepage/ingress.yaml": {
+      "description": "K8s IngressRoute: homepage",
+      "tokens": 184,
+      "hash": "518fb85027986a56",
+      "size": 644,
+      "mtimeMs": 1787554056512.6372,
+      "updatedAt": "2026-09-21T16:32:36.025Z",
+      "source": "scan"
+    },
+    "IPBan/emtpy.md": {
+      "description": "",
+      "tokens": 0,
+      "hash": "e3b0c44298fc1c14",
+      "size": 0,
+      "mtimeMs": 1787554056512.7073,
+      "updatedAt": "2026-09-21T16:32:36.025Z",
+      "source": "scan"
+    },
+    "Kasm/ingress.yaml": {
+      "description": "K8s IngressRoute: kasm",
+      "tokens": 179,
+      "hash": "32eb60b8388faed6",
+      "size": 626,
+      "mtimeMs": 1787554056512.8345,
+      "updatedAt": "2026-09-21T16:32:36.025Z",
+      "source": "scan"
+    },
+    "Kasm/kasm-values.yaml": {
+      "description": "yaml-language-server: $schema=values.schema.json",
+      "tokens": 4751,
+      "hash": "53d2d017b98200ea",
+      "size": 16626,
+      "mtimeMs": 1787554056512.927,
+      "updatedAt": "2026-09-21T16:32:36.026Z",
+      "source": "scan"
+    },
+    "Kestra/kestra-values.yaml": {
+      "description": "## Image",
+      "tokens": 2280,
+      "hash": "f8f854915c2c66f3",
+      "size": 7980,
+      "mtimeMs": 1787554056513.0767,
+      "updatedAt": "2026-09-21T16:32:36.026Z",
+      "source": "scan"
+    },
+    "Kestra/secrets/ssh-key.yaml": {
+      "description": "K8s Secret: ssh-key",
+      "tokens": 49,
+      "hash": "fbf3e011fbd77ee0",
+      "size": 169,
+      "mtimeMs": 1787554056513.2085,
+      "updatedAt": "2026-09-21T16:32:36.026Z",
+      "source": "scan"
+    },
+    "Kubernetes-Dashboard/empty.md": {
+      "description": "",
+      "tokens": 1,
+      "hash": "688787d8ff144c50",
+      "size": 3,
+      "mtimeMs": 1787554056513.5051,
+      "updatedAt": "2026-09-21T16:32:36.026Z",
+      "source": "scan"
+    },
+    "KubeVIP/empty.md": {
+      "description": "",
+      "tokens": 1,
+      "hash": "688787d8ff144c50",
+      "size": 3,
+      "mtimeMs": 1787554056513.3271,
+      "updatedAt": "2026-09-21T16:32:36.026Z",
+      "source": "scan"
+    },
+    "Langhorn/empty.md": {
+      "description": "",
+      "tokens": 1,
+      "hash": "688787d8ff144c50",
+      "size": 3,
+      "mtimeMs": 1787554056513.6702,
+      "updatedAt": "2026-09-21T16:32:36.026Z",
+      "source": "scan"
+    },
+    "MetalLB/empty.md": {
+      "description": "",
+      "tokens": 1,
+      "hash": "688787d8ff144c50",
+      "size": 3,
+      "mtimeMs": 1787554056513.8403,
+      "updatedAt": "2026-09-21T16:32:36.026Z",
+      "source": "scan"
+    },
+    "Moodle/ingress.yaml": {
+      "description": "K8s IngressRoute: moodle",
+      "tokens": 181,
+      "hash": "5e775f2c66f6f255",
+      "size": 632,
+      "mtimeMs": 1787554056513.9917,
+      "updatedAt": "2026-09-21T16:32:36.027Z",
+      "source": "scan"
+    },
+    "Moodle/moodle-values.yaml": {
+      "description": "SPDX-License-Identifier: APACHE-2.0",
+      "tokens": 656,
+      "hash": "b36f8d32f8c92919",
+      "size": 2293,
+      "mtimeMs": 1787554056514.118,
+      "updatedAt": "2026-09-21T16:32:36.027Z",
+      "source": "scan"
+    },
+    "Nextcloud/empty.md": {
+      "description": "",
+      "tokens": 1,
+      "hash": "688787d8ff144c50",
+      "size": 3,
+      "mtimeMs": 1787554056514.5415,
+      "updatedAt": "2026-09-21T16:32:36.027Z",
+      "source": "scan"
+    },
+    "NGINX-Ingress/empty.md": {
+      "description": "",
+      "tokens": 1,
+      "hash": "688787d8ff144c50",
+      "size": 3,
+      "mtimeMs": 1787554056514.2598,
+      "updatedAt": "2026-09-21T16:32:36.027Z",
+      "source": "scan"
+    },
+    "NGINX-Web/deployment.yaml": {
+      "description": "K8s Deployment: nginx",
+      "tokens": 471,
+      "hash": "b201297ca6e4bdf7",
+      "size": 1647,
+      "mtimeMs": 1787554056514.403,
+      "updatedAt": "2026-09-21T16:32:36.027Z",
+      "source": "scan"
+    },
+    "PasswordPusher/empty.md": {
+      "description": "",
+      "tokens": 0,
+      "hash": "e3b0c44298fc1c14",
+      "size": 0,
+      "mtimeMs": 1787554056514.656,
+      "updatedAt": "2026-09-21T16:32:36.027Z",
+      "source": "scan"
+    },
+    "Portainer/portainer-values.yaml": {
+      "description": "Default values for portainer.",
+      "tokens": 278,
+      "hash": "1936e3106336ca0f",
+      "size": 972,
+      "mtimeMs": 1787554056514.8296,
+      "updatedAt": "2026-09-21T16:32:36.027Z",
+      "source": "scan"
+    },
+    "Pterodactyl-Panel/empty.md": {
+      "description": "",
+      "tokens": 0,
+      "hash": "e3b0c44298fc1c14",
+      "size": 0,
+      "mtimeMs": 1787554056514.932,
+      "updatedAt": "2026-09-21T16:32:36.027Z",
+      "source": "scan"
+    },
+    "RabbitMQ/empty.md": {
+      "description": "",
+      "tokens": 0,
+      "hash": "e3b0c44298fc1c14",
+      "size": 0,
+      "mtimeMs": 1787554056515.1335,
+      "updatedAt": "2026-09-21T16:32:36.028Z",
+      "source": "scan"
+    },
+    "Rancher/empty.md": {
+      "description": "",
+      "tokens": 0,
+      "hash": "e3b0c44298fc1c14",
+      "size": 0,
+      "mtimeMs": 1787554056515.2236,
+      "updatedAt": "2026-09-21T16:32:36.028Z",
+      "source": "scan"
+    },
+    "Read2Burn/empty.md": {
+      "description": "",
+      "tokens": 0,
+      "hash": "e3b0c44298fc1c14",
+      "size": 0,
+      "mtimeMs": 1787554056515.3035,
+      "updatedAt": "2026-09-21T16:32:36.028Z",
+      "source": "scan"
+    },
+    "README.md": {
+      "description": "Project documentation",
+      "tokens": 190,
+      "hash": "21db5ac0cc0233e4",
+      "size": 770,
+      "mtimeMs": 1787554056515.0361,
+      "updatedAt": "2026-09-21T16:32:36.028Z",
+      "source": "scan"
+    },
+    "renovate.json": {
+      "description": "",
+      "tokens": 33,
+      "hash": "e80b4e42a3043bc1",
+      "size": 114,
+      "mtimeMs": 1787554056516.6323,
+      "updatedAt": "2026-09-21T16:32:36.028Z",
+      "source": "scan"
+    },
+    "Teleport/Teleport-Agent/teleport-agent-values.yaml": {
+      "description": "",
+      "tokens": 46,
+      "hash": "61237eb9637e7442",
+      "size": 161,
+      "mtimeMs": 1787554056515.4553,
+      "updatedAt": "2026-09-21T16:32:36.028Z",
+      "source": "scan"
+    },
+    "Teleport/Teleport-Cluster/ingress.yaml": {
+      "description": "K8s Certificate: example-production",
+      "tokens": 838,
+      "hash": "8d34fb99f77f0515",
+      "size": 2931,
+      "mtimeMs": 1787554056515.5552,
+      "updatedAt": "2026-09-21T16:32:36.028Z",
+      "source": "scan"
+    },
+    "Teleport/Teleport-Cluster/teleport-cluster-values.yaml": {
+      "description": "#################################################",
+      "tokens": 11575,
+      "hash": "fafcf7cf610fea66",
+      "size": 40510,
+      "mtimeMs": 1787554056515.6929,
+      "updatedAt": "2026-09-21T16:32:36.029Z",
+      "source": "scan"
+    },
+    "Traefik/external/example.yaml": {
+      "description": "K8s Service: example-route",
+      "tokens": 284,
+      "hash": "116eb49093e9cc2c",
+      "size": 994,
+      "mtimeMs": 1787554056515.9592,
+      "updatedAt": "2026-09-21T16:32:36.029Z",
+      "source": "scan"
+    },
+    "Traefik/ingress.yaml": {
+      "description": "K8s IngressRoute: traefik-dashboard",
+      "tokens": 224,
+      "hash": "a124e89467c96e03",
+      "size": 784,
+      "mtimeMs": 1787554056516.0408,
+      "updatedAt": "2026-09-21T16:32:36.029Z",
+      "source": "scan"
+    },
+    "Traefik/middleware/bouncer-middleware.yaml": {
+      "description": "K8s Middleware: bouncer",
+      "tokens": 80,
+      "hash": "bb3b8ff0671f3a6e",
+      "size": 280,
+      "mtimeMs": 1787554056516.15,
+      "updatedAt": "2026-09-21T16:32:36.029Z",
+      "source": "scan"
+    },
+    "Traefik/middleware/crowdsec-bouncer-plugin.yaml": {
+      "description": "K8s Middleware: crowdsec-bouncer-traefik-plugin",
+      "tokens": 71,
+      "hash": "8194c3aec79f7ae8",
+      "size": 247,
+      "mtimeMs": 1787554056516.2163,
+      "updatedAt": "2026-09-21T16:32:36.029Z",
+      "source": "scan"
+    },
+    "Traefik/middleware/default-headers.yaml": {
+      "description": "K8s Middleware: default-headers",
+      "tokens": 236,
+      "hash": "8f2dfb753a6c54bd",
+      "size": 826,
+      "mtimeMs": 1787554056516.2776,
+      "updatedAt": "2026-09-21T16:32:36.029Z",
+      "source": "scan"
+    },
+    "Traefik/middleware/middleware.yaml": {
+      "description": "K8s Middleware: traefik-dashboard-basicauth",
+      "tokens": 48,
+      "hash": "539e57dc296432b6",
+      "size": 168,
+      "mtimeMs": 1787554056516.3354,
+      "updatedAt": "2026-09-21T16:32:36.029Z",
+      "source": "scan"
+    },
+    "Traefik/traefik-values.yaml": {
+      "description": "",
+      "tokens": 283,
+      "hash": "606413e810aabf8c",
+      "size": 990,
+      "mtimeMs": 1787554056516.4,
+      "updatedAt": "2026-09-21T16:32:36.030Z",
+      "source": "scan"
+    },
+    "UpTimeKuma/empty.md": {
+      "description": "",
+      "tokens": 1,
+      "hash": "688787d8ff144c50",
+      "size": 3,
+      "mtimeMs": 1787554056516.483,
+      "updatedAt": "2026-09-21T16:32:36.030Z",
+      "source": "scan"
+    },
+    "ZScaler-App-Connector/empty.md": {
+      "description": "",
+      "tokens": 1,
+      "hash": "688787d8ff144c50",
+      "size": 3,
+      "mtimeMs": 1787554056516.5698,
+      "updatedAt": "2026-09-21T16:32:36.030Z",
+      "source": "scan"
+    }
+  },
+  "preamble": [
+    "> Project structure index. Auto-maintained by OpenWolf hooks and daemon.",
+    "> Run `openwolf scan` to generate, or wait for the first Claude Code session.",
+    "> Status: Pending initial scan"
+  ]
+}
